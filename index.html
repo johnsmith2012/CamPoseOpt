@@ -55,7 +55,7 @@ table.TableGrid
 		Xiao Liu<sup>1</sup>,&nbsp;Lin Zhang<sup>1,*</sup>, 
 		Ying Shen<sup>1,*</sup>, Shaoming Zhang<sup>2</sup>, 
 		and Shengjie Zhao<sup>1</sup></span></font><p class="text">
-		<span lang="en-us"><font face="Calibri" size="4" color="#0000FF">School 
+		<span lang="en-us"><font face="Calibri" size="4" color="#0000FF"><sup>1</sup>School 
 		of Software Engineering, Tongji University, Shanghai 201804, China</font></span><br />
 		<span lang="en-us"><font face="Calibri" size="4" color="#0000FF"><sup>2</sup>College of Surveying and Geo-informatics, Tongji University, Shanghai 201804, China</font></span></td>
 	</tr>
@@ -64,7 +64,7 @@ table.TableGrid
 <p><span lang="en-us"><b><font face="Calibri" size="5">Introduction</font></b></span></p>
 <p>
 <span style="font-size: 13pt; font-family: Calibri; color: windowtext" lang="EN-US">
-This is the website of our paper &quot;TOnline Camera Pose Optimization for the Surround-view System&quot;, published in ACM Multimedia 2019</span><span style="font-family: Calibri; font-size: 13pt" lang="en-us">.</span></p>
+This is the website of our paper &quot;Online Camera Pose Optimization for the Surround-view System&quot;, published in ACM Multimedia 2019</span><span style="font-family: Calibri; font-size: 13pt" lang="en-us">.</span></p>
 <p>
 <span lang="en-us"><font face="Calibri" style="font-size: 13pt">Surround view system is an important information media for drivers to monitor the driving environment. A typical surround view system consists of four to six fsheye cameras arranged around the vehicle. From these camera inputs, a top-down image of ground around the vehicle, namely the surround view image can be generated with well calibrated camera poses. Although existing surround
 view system solutions can estimate camera poses accurately in ofine environment, the problem of correcting the camera pose change in online environment is still a research gap. In this paper, we propose a camera pose optimization method for surround view system in online environment. Our method consists of two models: Ground Model and Ground-Camera Model, both of which correct the camera poses by minimizing photometric errors between ground projections of adjacent cameras. Experiments show that our method can eﬀectively correct the geometric misalignment of the surround view image caused by camera pose changes. Since our method is highly automated with low requirement of calibration site and manual operation, it has wide application scenario and is convenient for the end users. To make our results fully reproducible, the dataset and the relevant source code have been made publicly available on this website.</font></span></p>
@@ -75,17 +75,18 @@ view system solutions can estimate camera poses accurately in ofine environment,
 <span lang="en-us"><font face="Calibri" style="font-size: 13pt">1. 
 <a href="" download="code.zip">code.zip</a></font></span></p>
 <p>
-<span lang="en-us"><font face="Calibri" style="font-size: 13pt">This is the code of Ground-Camera Model. The prerequisites for running the .ipynb file is the Tensorflow environment and Jupyter Notebook.</font></span></p>
+<span lang="en-us"><font face="Calibri" style="font-size: 13pt"> This is the code of Ground Model and Ground-Camera Model. The code can be compiled with cmake. The prerequisite of compiling can be found in CMakeLists.txt.</font></span></p>
 <p>
 <span lang="en-us"><font face="Calibri" style="font-size: 13pt"> 2.
 <a href="" download="test_cases.zip">test_cases.zip</a></font></span></p>
 <p>
-<span lang="en-us"><font face="Calibri" style="font-size: 13pt">These are some surround-view images for testing. The extract code is 'ioqo'. </font></span></p>
+<span lang="en-us"><font face="Calibri" style="font-size: 13pt"> These are some surround-view images for testing. Images in ALL/ are captured by the Front, Left, Back, Right camera respectively. Same index means the images are captured at the same time. Images in surround view/ are the surround-view images corresponded to the images in ALL/.
+</font></span></p>
 <p>
 <span lang="en-us"><font face="Calibri" style="font-size: 13pt"> 3.
 <a href="" download="result_examples.zip">result_examples.zip</a></font></span></p>
 <p>
-<span lang="en-us"><font face="Calibri" style="font-size: 13pt">These are some surround-view images for testing. The extract code is 'ioqo'. </font></span></p>
+<span lang="en-us"><font face="Calibri" style="font-size: 13pt"> Results of the test cases before and after being processed by our algorithm. </font></span></p>
 
 
 <hr>
